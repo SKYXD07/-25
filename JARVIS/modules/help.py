@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ ᴊᴀʀᴠɪs ʙᴏᴛs ʜᴇʟᴘ ᴍᴇɴᴜ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @JARVIS_V2**"
+HELP_STRING = f"★  ꪀꪖ𝘬𝘴ꫝ  ʙᴏᴛs ʜᴇʟᴘ ᴍᴇɴᴜ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @naksh_hu_vai
 
 HELP_BUTTON = [
     [
@@ -14,8 +14,8 @@ HELP_BUTTON = [
       Button.inline("• ᴇxᴛʀᴀ •", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_X_SUPPORT"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/CHATTING_2024")
+      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/naksh_accounts"),
+      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/mysterious_chatzz")
     ]
   ]
 
@@ -60,7 +60,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @JARVIS_V2**
+**© @naksh_hu_vai**
 """
 
                  
@@ -92,7 +92,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @JARVIS_V2**
+**© @naksh_hu_vai**
 """
 
 spam_msg = f"""
@@ -109,7 +109,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-** © @JARVIS_V2**
+** © @naksh_hu_vai**
 """                     
            
            
@@ -136,13 +136,13 @@ async def helpback(event):
                 Button.inline("• ᴇxᴛʀᴀ •", data="extra")
               ],
               [
-                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_X_SUPPORT"),
-                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/CHATTING_2024")
+                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/naksh_accounts"),
+                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/mysterious_chatzz")
               ]
             ]
           )
     else:
-        await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍!! @JARVIS_V2", cache_time=0, alert=True)
+        await event.answer("ᴘᴀʜʟᴇ  ꪀꪖ𝘬𝘴ꫝ ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍!! @uh_knew_naksh", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -161,7 +161,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍 !! @JARVIS_V2", cache_time=0, alert=True)
+        await event.answer("ᴘᴀʜʟᴇ   ꪀꪖ𝘬𝘴ꫝ ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍 !! @uh_knew_naksh", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -180,7 +180,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍 !! @JARVIS_V2", cache_time=0, alert=True)
+        await event.answer("ᴘᴀʜʟᴇ    ꪀꪖ𝘬𝘴ꫝ  ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍 !! @uh_knew_naksh", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,5 +199,5 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍!! @JARVIS_V2", cache_time=0, alert=True)
+        await event.answer("    ꪀꪖ𝘬𝘴ꫝ   ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ 𖤍!! @uh_knew_naksh", cache_time=0, alert=True)
 
