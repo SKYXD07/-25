@@ -19,7 +19,7 @@ from telethon.errors import ForbiddenError
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
-async def logs(ANNIE):
+async def logs(PAPA):
     if ANNIE.sender_id == OWNER_ID:
         if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
             await ANNIE.reply(
@@ -42,14 +42,14 @@ async def logs(ANNIE):
         fetch = await ANNIE.reply(f"__Fetching Logs...__")
     
         with open("JARVISlogs.txt", "w") as logfile:
-            logfile.write("⚡ JARVISBOTS ⚡ [ Bot Logs ]\n\n" + logs)
+            logfile.write("⚡ NAKSHZBOTS ⚡ [ Bot Logs ]\n\n" + logs)
 
         end = datetime.now()
         ms = (end-start).seconds
         await asyncio.sleep(1)
 
         try:
-            await X1.send_file(ANNIE.chat_id, "JARVISlogs.txt", caption=f"⚡ **JARVIS BOTS LOGS** ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
+            await X1.send_file(ANNIE.chat_id, "JARVISlogs.txt", caption=f"⚡ **naksh BOTS LOGS** ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
             await fetch.delete()
         except Exception as e:
             await fetch.edit(f"An Exception Occured!\n\n**ERROR:** {str(e)}")
